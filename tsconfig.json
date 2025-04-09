@@ -1,0 +1,18 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "target": "ES2020", // Target modern JavaScript
+    "module": "CommonJS", // Module system for Node.js compatibility
+    "outDir": "./dist", // Output directory for compiled JS
+    "rootDir": "./src", // Source directory for TS files
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true, // Allows default imports from CommonJS modules
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true, // Allow importing JSON files
+    "sourceMap": true, // Generate source maps for debugging
+    "declaration": true // Generate .d.ts files (good practice for libraries)
+  },
+  "include": ["src/**/*"], // Which files to compile
+  "exclude": ["node_modules", "dist"] // Which folders to ignore
+}
