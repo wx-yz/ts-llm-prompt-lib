@@ -11,8 +11,9 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true, // Allow importing JSON files
     "sourceMap": true, // Generate source maps for debugging
-    "declaration": true // Generate .d.ts files (good practice for libraries)
+    "declaration": true, // Generate .d.ts files (good practice for libraries)
+    "moduleResolution": "node"
   },
   "include": ["src/**/*"], // Which files to compile
-  "exclude": ["node_modules", "dist"] // Which folders to ignore
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "src/example.ts"] // Which folders to ignore
 }

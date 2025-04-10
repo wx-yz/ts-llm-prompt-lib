@@ -1,24 +1,49 @@
 {
-  "name": "ts-llm-prompt-lib",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "ts-prompt-fn",
+  "version": "0.1.0",
+  "description": "TypeScript library for creating strongly-typed LLM functions with structured output validation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./node_modules/typescript/bin/tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "llm",
+    "openai",
+    "gemini",
+    "anthropic",
+    "prompt",
+    "typescript",
+    "zod"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.4.7",
     "node-fetch": "^3.3.2",
     "zod": "^3.24.2",
-    "zod-to-json-schema": "^3.24.5",
-    "typescript": "^5.8.3"
+    "zod-to-json-schema": "^3.24.5"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
+    "@types/node": "^22.14.0", 
     "@types/node-fetch": "^2.6.12",
     "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.5.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ts-prompt-fn.git"
   }
 }

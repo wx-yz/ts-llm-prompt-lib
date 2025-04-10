@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'; // Use native fetch if in a compatible environment
+import fetch from 'node-fetch'; // Change to ES Module import if using v3
 import { LLMProvider } from './base';
 import { ApiError } from '../errors'; // We should define a custom error class
 
