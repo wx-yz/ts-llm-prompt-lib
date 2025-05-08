@@ -1,6 +1,6 @@
 {
   "name": "ts-prompt-fn",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript library for creating strongly-typed LLM functions with structured output validation",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
